@@ -1,0 +1,7 @@
+{
+    "presets": [["latest", {
+        "targets": {
+            "node": 6
+        }
+    }]]
+}

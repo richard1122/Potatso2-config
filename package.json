@@ -1,0 +1,25 @@
+{
+  "name": "rocket-config",
+  "version": "1.0.0",
+  "main": "out.js",
+  "repository": "git@github.com:richard1122/rocket-config.git",
+  "author": "richard <richard9372@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-latest": "^6.24.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.24.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "lodash": "^4.17.4",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
+  },
+  "scripts": {
+    "build": "babel main.js -o out.js",
+    "start": "babel main.js -o out.js && node index.js"
+  }
+}
