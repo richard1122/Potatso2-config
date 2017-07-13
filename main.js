@@ -15,7 +15,7 @@ function filterFile(content) {
 
 async function main() {
     const [chnip, cdn] = (await Promise.all(urls.map(rp))).map(filterFile)
-    var template = fs.readFileSync('template.txt', 'utf-8')
+    var template = fs.readFileSync('template.conf', 'utf-8')
     template = template.replace('*bypass-tun*', chnip.join(','))
     template = template.replace('*bypass*', cdn.map(it => {
         return `DOMAIN-SUFFIX,${it},DIRECT`
